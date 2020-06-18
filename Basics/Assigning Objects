@@ -1,0 +1,29 @@
+const o= new Object()
+o.firstname="chandan"
+o.lastname="Krishnani"
+o.isteaching= true
+o.greet = function() {
+    console.log("Hii")
+}
+const o2={}
+o2.firstname="Hitesh"
+o2['Second name']="Kishnani"
+const key ="isteaching"
+o2[key]=true
+o2['greet']=function(){
+    console.log("Hii");
+}
+const o3 ={
+    firstname: "Nisha",
+    lastname: "Krishnani",
+    greet: function()
+    {
+        console.log("Hii")
+    },
+    address :{
+        street : "railway station road",
+        pinncode: "322201"
+    },
+}
+console.log(o3.address.pinncode)
+console.log(o2[key])
