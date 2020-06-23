@@ -3,16 +3,23 @@ import { render } from "react-dom";
 
 const styles ={
   fontFamily: 'sans-serif',
-  textAlign: 'center',
+  textAlign: 'right',
 };
 const App = (props) =>(
 <div styles={styles}>
 
 <h2>{props.count}</h2>
   </div>
-
-
 );
+  const App2 = function(props) 
+  {
+   return(<div styles={styles}>
+           <h2>{props.count}</h2>
+           </div>)
+
+  }
+
+
 let count=0
 setInterval(() => render(<App  count={count ++} />,document.getElementById('root')),1000);
 
