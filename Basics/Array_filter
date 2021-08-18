@@ -1,0 +1,21 @@
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+const smallNumbers=randomNumbers.filter(number => {
+  return number<250;
+
+})
+const longFavoriteWords = favoriteWords.filter(fav => {
+  return fav.length>7;
+});
+
+
+
+
+// Call .filter() on favoriteWords below
+
+ 
